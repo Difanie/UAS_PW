@@ -1,0 +1,97 @@
+		@font-face{ font-family: font1;
+			src: url(Mermaid1001.ttf);
+			}
+		@font-face{ font-family: font2;
+			src: url(font2.ttf);
+			}
+		.navbar{
+			margin-left : 0px;
+			background-color: rgba(0,204,153,0.8);
+			font-family: font1;
+			}
+		.carousel{
+			height : 400px;
+			font-family : font1;
+			font-size : 20px;
+			}
+		.carousel img{
+			min-height : 400px;
+			object-fit : cover;
+			}
+		.carousel-caption{
+			background-image : linear-gradient(to bottom right, rgba(0,204,153), rgba(153,204,0,0.4));
+			margin-left: auto;
+			margin-right: auto;
+			margin-bottom : 80px;
+			width : 500px;
+			}
+		.card{
+			min-width : 400px;
+			margin-top : 200px;
+			border-width: 10px;
+			border-color :rgba(0,204,153,0.8); 
+		}
+		.card-deck .card{
+			opacity : 0;
+			transform: translate(0, -40px);
+			transition : 0.3s;
+		}
+		.card-deck .card.timbul {
+			opacity : 1;
+			transform: translate(0, 0px);
+		}
+		.home {
+			margin-top : 70px;
+			opacity: 0;
+			transform: translate(-50px, 0px) rotate(90deg);
+			transition : 2s;
+		}
+		.home.htimbul{
+			opacity: 1;
+			transform: translate(0, 0px);
+		}
+		table{
+			font-family: sans-serif;
+		}
+ 
+		footer {
+			width : 100%;
+			color: rgba(117,117,117);
+			position: relative;
+			left: 0;
+			min-height: 100%;
+			margin-bottom: 0;
+			font-size: 15px
+			}
+		.btn {
+			background-color : rgba(153,204,0,0.7);
+			}
+		.bg {background-image : url("gigi-bg3.jpg");
+			background-size : cover;
+			height : 1000px;
+			background-repeat : no-repeat;
+			background-attachment : fixed;	
+		}
+		h1{
+			font-family : font2;
+			text-align: center;
+			margin: 40px;
+			}	
+		.judul { 
+			opacity :0;
+			transform: translate(0, -40px);
+			transition : 1s;
+			
+		}
+		.judul.gerak { 
+			opacity :1;
+			transform: translate(0, 0px);
+			
+		}
+		.a{background-color : rgba(255,249,214);
+		}
+		.b{background-color : rgba(214,255,228);
+		}
+		.c{background-color : rgba(214,221,255);
+		}
+		

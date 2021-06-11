@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="icon" href="tooth.png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+	integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+	<script src="jQuery.js"></script>
+	<link rel="stylesheet" href="dental.css">
+    <title>Price List</title>
+  </head>
+  <style>
+	
+   th[scope=row]{
+			text-align : right;
+			}
+	.table {
+			width : 1000px;
+			margin-left : auto;
+			margin-right : auto;
+			opacity : 90%;
+		
+	}
+	.janji{
+		background-color : rgba(0,204,153);
+			padding: 5px;
+			border: 5px solid;
+			border-color: rgba(0,204,153);
+			width: 150px;
+			border-radius:30px;
+			font-size: 20px;
+			margin-left:600px;
+			margin-top: 50px;
+			margin-bottom : 100px;
+			}
+	}
+  </style>
+
+	 <script>
+	$(document).ready(function(){
+		$('td').hover(function(){
+			$(this).css('background-color', 'lightblue');
+			}, function(){
+			$(this).css("background-color", "");
+			});	
+		});
+  </script>
+  <body>
+  <div class="container-flex bg">
+  <!-- navbar -->
+		<nav class="navbar navbar-expand-xl navbar-light ">
+			<a class="navbar-brand" href="home.html"><img src="tooth.png" width="30" height="30" class="d-inline-block align-top" alt="">Dental Clinic</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" 
+				aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav mr-auto">
+				 
+				  <li class="nav-item">
+					<a class="nav-link" href="dentist schedule.html">Dentist Schedule</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" href="price list.html">Price List</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" href="#">Testimonial</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" href="#">Contact Us</a>
+				  </li>
+				  <li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" 
+					aria-haspopup="true" aria-expanded="false">about us</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+					  <a class="dropdown-item" href="#">VIsi-Misi</a>
+					  <a class="dropdown-item" href="#">Founder & Co-Founder</a>
+					</div>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Admin</a>
+				  </li>
+				</ul>
+				<form class="form-inline my-2 my-lg-0">
+				  <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+				  <button class="btn btn-solid my-2 my-sm-0" type="submit">Search</button>
+				</form>
+			</div>
+		</nav>
+	<!-- end navbar-->
+    <h1 class="judul">Price List</h1>
+	 <!-- tabel -->
+	<div class="table-responsive">
+	<table class="table table-bordered">
+  <thead>
+    <tr style="background-color : rgba(255,214,241);">
+      <th scope="col" width="50 px"></th>
+      <th scope="col">Pelayanan</th>
+      <th scope="col">Harga</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="a">
+      <th scope="row" ></th>
+      <td colspan="2">Scaling </td>
+    </tr>
+    <tr class="a">
+      <th scope="row">1</th>
+      <td>Scaling sedikit</td>
+	  <td>Rp. 150.000</td>
+    </tr>
+    <tr class="a">
+      <th scope="row">2</th>
+	  <td>Scaling banyak</td>
+	  <td>Rp. 250.000</td>
+    </tr>
+	<tr class="b">
+	  <th scope="row"></th>
+	  <td  colspan="3">Cabut Gigi</td>
+    </tr>
+	<tr class="b">
+      <th scope="row">1</th>
+	  <td>Gigi Susu </td>
+	  <td>Rp. 50.000</td>
+    </tr>
+	<tr class="b">
+      <th scope="row">2</th>
+	  <td>Gigi Tetap </td>
+	  <td>Rp. 150.000</td>
+    </tr>
+	<tr class="b">
+      <th scope="row">3</th>
+	  <td>Odontektomi </td>
+	  <td>Rp. 600.000</td>
+    </tr>
+	<tr class="c">
+      <th scope="row"></th>
+	  <td colspan="2">Tambal Gigi </td>
+    </tr>
+	<tr class="c">
+      <th scope="row">1</th>
+	  <td>Tambalan GIC Anak </td>
+	  <td>Rp. 100.000</td>
+    </tr>
+	<tr class="c">
+      <th scope="row">2</th>
+	  <td>Tambalan GIC dewasa </td>
+	  <td>Rp. 150.000</td>
+    </tr class="c">
+	<tr class="c">
+      <th scope="row">3</th>
+	  <td>Tambalan sementara </td>
+	  <td>Rp. 80.000</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+	 <!-- akhir tabel -->
+	<button class="janji btn btn-success">Buat Janji</button>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" 
+	integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+	integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+  </div>
+ </body>
+ <footer>
+  <p>&copy; 2019 tyket company s.t. All right reservered.</p>
+</footer>
+</html>
